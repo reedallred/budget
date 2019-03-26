@@ -17,6 +17,7 @@ defmodule BudgetWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/transactions", TransactionController
   end
 
   # Other scopes may use custom stacks.
