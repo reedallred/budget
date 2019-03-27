@@ -16,7 +16,7 @@ defmodule BudgetWeb.Router do
   scope "/", BudgetWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", TransactionController, :index
     resources "/transactions", TransactionController
     get "/csv", CsvController, :index
     post "/csv", CsvController, :import
