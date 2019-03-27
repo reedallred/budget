@@ -1,0 +1,4 @@
+<h1>Import Transaction</h1>
+
+<%= render "import.html", Map.put(assigns, :action, Routes.csv_path(@conn, :index)) %>
+

@@ -18,6 +18,8 @@ defmodule BudgetWeb.Router do
 
     get "/", PageController, :index
     resources "/transactions", TransactionController
+    get "/csv", CsvController, :index
+    post "/csv", CsvController, :import
   end
 
   # Other scopes may use custom stacks.
