@@ -1,5 +1,7 @@
 <h1>Listing Transactions</h1>
 
+<span><%= link "New Transaction", to: Routes.transaction_path(@conn, :new) %></span>
+<span><%= link "Import CSV File", to: Routes.csv_path(@conn, :index) %></span>
 <table>
   <thead>
     <tr>
@@ -28,6 +30,3 @@
 <% end %>
   </tbody>
 </table>
-
-<span><%= link "New Transaction", to: Routes.transaction_path(@conn, :new) %></span> <br />
-<span><%= link "Import CSV File", to: Routes.csv_path(@conn, :index) %></span>
